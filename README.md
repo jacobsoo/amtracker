@@ -55,5 +55,5 @@ WhiteBroad
 
 ### Usage
 ```python
- python.exe .\amtracker.py [-f | -d] <filename>
+ python amtracker.py [-f|-d] <filename>
 ```
