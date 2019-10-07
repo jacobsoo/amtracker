@@ -9,7 +9,11 @@ from amtracker.common.out import _log
     by Jacob Soo Lead Re (jacob.soo@starlabs.sg)
     
     Hashes for samples:
-    
+    ca9fcd32fe770cd5f3427100de15a93bda710aa3034c5daa22e90b5a2abf8abd
+    4eb770e004f6df8a696a63145be4531be66d36492f3dccfc6a0782b1eb336a46
+    fe00cfa0f75e855282886658930c7048fef7530989198d4e6a7620bf2d274b77
+    ba0bfb33123796d452e86a95da3e79dea2c51f736332c16878861c3e37baac30
+    47ebd40226d34e808b231f9948c04d648f1234776b8438c2d8dd76bf9089f517
 '''
 
 class ChinaSMSStealer(object):
