@@ -14,3 +14,38 @@ If there are is a specific Android family which you want me to add it, please ki
 The codes will require updates after i publish this repository.  
 
 As the malware authors will probably edit their codes to prevent this tool from extracting useful information.
+
+Currently, i've added config extractors for the following:
+AndroRat
+
+AhMyth
+
+APT-C-23
+
+APT-C-27
+
+BankBot
+
+Dendroid
+
+FakeSpy
+
+FlexBotnet
+
+Moqhao
+
+MuddyWater
+
+Saefko
+
+SandroRat
+
+Spynote
+
+TeleRat
+
+Triout
+
+Vamp
+
+WhiteBroad
