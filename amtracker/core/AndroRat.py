@@ -9,11 +9,11 @@ from amtracker.common.out import _log
     by Jacob Soo Lead Re (jacob.soo@starlabs.sg)
     
     Hashes for samples:
-    a4802bceaa9bfe337460d5935626b85d5f497a0f5d13afe0539925f4e0748c5f
-    fc3a6bc2dec16aa4f6b3ddcd88718ec2b6b03d5ea8e784ed03bc3bb70d323a40
-    dff641baafbc26af4a7afc804d393aa67809e1b6e0f6b8c5dfb7108b34dc043f
-    3585853bc1d6448810fae2fdd511b180294cb6f82d4caebbc099ac2e3a544c9b
-    c6f926b31d991ec9b26f83908d3fcf64c5f764ec1df12a6cf34af8c09dbf03f6
+    18f02dd87210fc75a7da90a7637bb0920453aee59bbc4bfd820b6576c3fd9dbe
+    28f8b2b568529c2106fdc60e124ac5a412c8fa8bbe99f8c05d9b52e7b3954369
+    5a0bbf3c206514177d22a4c0a4f88efc7e9c649d39df96f06283cace25116488
+    65cf2b5bf57c79629d9ebc1a691de9b3db285729b73e34348391e51fd3947b4d
+    85a3703cf9af26e842c264e7d247742e9658901af11e9f644b5b0b71effeef6e
 '''
 
 class AndroRat(object):

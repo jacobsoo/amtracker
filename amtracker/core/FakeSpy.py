@@ -9,11 +9,11 @@ from amtracker.common.out import _log
     by Jacob Soo Lead Re (jacob.soo@starlabs.sg)
     
     Hashes for samples:
-    a4802bceaa9bfe337460d5935626b85d5f497a0f5d13afe0539925f4e0748c5f
-    fc3a6bc2dec16aa4f6b3ddcd88718ec2b6b03d5ea8e784ed03bc3bb70d323a40
-    dff641baafbc26af4a7afc804d393aa67809e1b6e0f6b8c5dfb7108b34dc043f
-    3585853bc1d6448810fae2fdd511b180294cb6f82d4caebbc099ac2e3a544c9b
-    c6f926b31d991ec9b26f83908d3fcf64c5f764ec1df12a6cf34af8c09dbf03f6
+    a8e7f53427fff29d46b43efe508cd046537b09324b6b0574c3e15b863b4136a1
+    51793a9bc21e8235266ec150cb1152e94104b95c364ee9544bc231447c3d0002
+    4c41274f3927577cff271de57b3de3a464c11add7245d272877bc676a369dd3b
+    fa70929f95894c19dae0b58666204251d076b0b1a81a23529847f679135e2ca4
+    b2b43c197af5196c566baeec8e64aa4bb0a922d3a05d5f5c5c3e752b106093f4
 '''
 
 class FakeSpy(object):
@@ -65,7 +65,7 @@ class FakeSpy(object):
         szIP_ADDRESS = ""
         szLOGS_URL = ""
         for cls in d.get_classes():
-            if 'Lcom/example/dew18/myapplication/MyService$ReThread;'.lower() in cls.get_name().lower():
+            if 'MyService$ReThread;'.lower() in cls.get_name().lower():
                 c2 = ""
                 string = None
                 for method in cls.get_methods():
