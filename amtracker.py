@@ -16,7 +16,9 @@ from amtracker.core.AndroRat import AndroRat
 from amtracker.core.APT_C_23 import APT_C_23
 from amtracker.core.APT_C_27 import APT_C_27
 from amtracker.core.BankBot import BankBot
+from amtracker.core.ChinaSMSStealer import ChinaSMSStealer
 from amtracker.core.Dendroid import Dendroid
+from amtracker.core.EventBot import EventBot
 from amtracker.core.FakeSpy import FakeSpy
 from amtracker.core.FlexBotnet import FlexBotnet
 from amtracker.core.moqhao import moqhao
@@ -29,7 +31,7 @@ from amtracker.core.Vamp import Vamp
 from amtracker.core.MuddyWater import MuddyWater
 from amtracker.core.WhiteBroad import WhiteBroad
 
-android_family = ["AndroRat", "AhMyth", "apt-c-23", "apt-c-27", "BankBot", "Dendroid", "FakeSpy", "FlexBotnet", "moqhao", "MuddyWater", "Saefko", "SandroRat", "spynote", "TeleRat", "Triout", "Vamp", "WhiteBroad"]
+android_family = ["AndroRat", "AhMyth", "apt-c-23", "apt-c-27", "BankBot", "ChinaSMSStealer", "Dendroid", "EventBot", "FakeSpy", "FlexBotnet", "moqhao", "MuddyWater", "Saefko", "SandroRat", "spynote", "TeleRat", "Triout", "Vamp", "WhiteBroad"]
 
 #---------------------------------------------------
 # isNotEmpty : Checks whether string is empty
@@ -95,10 +97,22 @@ def verifyMalware(apkfile):
             bRes = analysis.verifyBankBot(apkfile)
             if bRes==True:
                 break
+        if family=="ChinaSMSStealer":
+            analysis = ChinaSMSStealer()
+            _log("[+] Verifying if it's ChinaSMSStealer.")
+            bRes = analysis.verifyChinaSMSStealer(apkfile)
+            if bRes==True:
+                break
         if family=="Dendroid":
             analysis = Dendroid()
             _log("[+] Verifying if it's Dendroid.")
             bRes = analysis.verifyDendroid(apkfile)
+            if bRes==True:
+                break
+        if family=="EventBot":
+            analysis = EventBot()
+            _log("[+] Verifying if it's EventBot.")
+            bRes = analysis.verifyEventBot(apkfile)
             if bRes==True:
                 break
         elif family=="FakeSpy":
