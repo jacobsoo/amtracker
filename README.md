@@ -45,6 +45,8 @@ SandroRat
 
 Spynote
 
+Syrian Mobile Trojan
+
 TeleRat
 
 Triout
