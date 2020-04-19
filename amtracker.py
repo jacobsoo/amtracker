@@ -25,13 +25,14 @@ from amtracker.core.moqhao import moqhao
 from amtracker.core.Saefko import Saefko
 from amtracker.core.SandroRat import SandroRat
 from amtracker.core.spynote import spynote
+from amtracker.core.SyrianMT import SyrianMT
 from amtracker.core.TeleRat import TeleRat
 from amtracker.core.Triout import Triout
 from amtracker.core.Vamp import Vamp
 from amtracker.core.MuddyWater import MuddyWater
 from amtracker.core.WhiteBroad import WhiteBroad
 
-android_family = ["AndroRat", "AhMyth", "apt-c-23", "apt-c-27", "BankBot", "ChinaSMSStealer", "Dendroid", "EventBot", "FakeSpy", "FlexBotnet", "moqhao", "MuddyWater", "Saefko", "SandroRat", "spynote", "TeleRat", "Triout", "Vamp", "WhiteBroad"]
+android_family = ["AndroRat", "AhMyth", "apt-c-23", "apt-c-27", "BankBot", "ChinaSMSStealer", "Dendroid", "EventBot", "FakeSpy", "FlexBotnet", "moqhao", "MuddyWater", "Saefko", "SandroRat", "spynote", "SyrianMT", "TeleRat", "Triout", "Vamp", "WhiteBroad"]
 
 #---------------------------------------------------
 # isNotEmpty : Checks whether string is empty
@@ -157,6 +158,12 @@ def verifyMalware(apkfile):
             bRes = analysis.verifySpyNote(apkfile)
             if bRes==True:
                 break
+        elif family=="SyrianMT":
+            analysis = SyrianMT()
+            _log("[+] Verifying if it's SyrianMT.")
+            bRes = analysis.verifySyrianMT(apkfile)
+            if bRes==True:
+                break
         elif family=="TeleRat":
             analysis = TeleRat()
             _log("[+] Verifying if it's TeleRat.")
@@ -195,7 +202,7 @@ def logo():
     print('\n')
     print(" Extract intel from this Android mallie!")
     print(" Jacob Soo")
-    print(" Copyright (c) 2019\n")
+    print(" Copyright (c) 2018-2020\n")
                                                                                                                       
 
 if __name__ == "__main__":
