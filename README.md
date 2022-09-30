@@ -77,6 +77,30 @@ $ python.exe .\amtracker\amtracker.py -f ca87cc9898af3883eca81aca658109fdd7ca252
 
 - APT-C-27
 - BankBot
+
+- [BladeHawk](https://www.welivesecurity.com/2021/09/07/bladehawk-android-espionage-kurdish/)
+```shell
+$ python.exe .\amtracker\amtracker.py -f 2a4cf22220b95ad1f802efd1ae8abea56e83dc598d66eb073d75882d20858e39
+
+
+ ______     __  __     __     ______   ______        ______     ______     ______     __  __     ______     __   __
+/\  ___\   /\ \_\ \   /\ \   /\__  _\ /\  ___\      /\  == \   /\  == \   /\  __ \   /\ \/ /    /\  ___\   /\ "-.\ \
+\ \___  \  \ \  __ \  \ \ \  \/_/\ \/ \ \___  \     \ \  __<   \ \  __<   \ \ \/\ \  \ \  _"-.  \ \  __\   \ \ \-.  \
+ \/\_____\  \ \_\ \_\  \ \_\    \ \_\  \/\_____\     \ \_____\  \ \_\ \_\  \ \_____\  \ \_\ \_\  \ \_____\  \ \_\\"\_\
+  \/_____/   \/_/\/_/   \/_/     \/_/   \/_____/      \/_____/   \/_/ /_/   \/_____/   \/_/\/_/   \/_____/   \/_/ \/_/
+
+
+ Extract intel from this Android mallie!
+ Jacob Soo
+ Copyright (c) 2018-2022
+
+[+] Verifying if it's BladeHawk.
+[+] Potentially BladeHawk
+[+] Extracting from 2a4cf22220b95ad1f802efd1ae8abea56e83dc598d66eb073d75882d20858e39
+[+] C&C: [ alex00.ddns.net ]
+[+] Port : [ 4000 ]
+```
+
 - ChinaSMSStealer
 - Dendroid
 - FakeSpy
