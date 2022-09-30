@@ -52,7 +52,29 @@ $ python.exe .\amtracker\amtracker.py -f d4e16801c46f51f704ed439fe7648e9d93a2b8f
 [+] C&C: [ http://217.11.29.164:44303 ]
 ```
 
-- APT-C-23
+- [APT-C-23](https://symantec-enterprise-blogs.security.com/blogs/expert-perspectives/ongoing-android-malware-campaign-targets-palestinians-part-2)
+```shell
+$ python.exe .\amtracker\amtracker.py -f ca87cc9898af3883eca81aca658109fdd7ca2529dfbd45a25e0c6e7cf0b526e5
+
+
+ ______     __  __     __     ______   ______        ______     ______     ______     __  __     ______     __   __
+/\  ___\   /\ \_\ \   /\ \   /\__  _\ /\  ___\      /\  == \   /\  == \   /\  __ \   /\ \/ /    /\  ___\   /\ "-.\ \
+\ \___  \  \ \  __ \  \ \ \  \/_/\ \/ \ \___  \     \ \  __<   \ \  __<   \ \ \/\ \  \ \  _"-.  \ \  __\   \ \ \-.  \
+ \/\_____\  \ \_\ \_\  \ \_\    \ \_\  \/\_____\     \ \_____\  \ \_\ \_\  \ \_____\  \ \_\ \_\  \ \_____\  \ \_\\"\_\
+  \/_____/   \/_/\/_/   \/_/     \/_/   \/_____/      \/_____/   \/_/ /_/   \/_____/   \/_/\/_/   \/_____/   \/_/ \/_/
+
+
+ Extract intel from this Android mallie!
+ Jacob Soo
+ Copyright (c) 2018-2022
+
+[+] Verifying if it's APT-C-23.
+[+] It's APT-C-23
+[+] Extracting from ca87cc9898af3883eca81aca658109fdd7ca2529dfbd45a25e0c6e7cf0b526e5
+[+] Extracted C2: http://upload101.net/android/domains
+[+] Extracted C2: http://upload999.info
+```
+
 - APT-C-27
 - BankBot
 - ChinaSMSStealer
