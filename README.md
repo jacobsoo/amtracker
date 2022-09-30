@@ -10,7 +10,7 @@ There are several more config extractors which i haven't added yet.  If there ar
 As the malware authors will probably edit their codes to prevent this tool from extracting useful information.
 
 Currently, i've added config extractors for the following:
-- [AndroRat[(https://www.bitdefender.com/blog/hotforsecurity/possibly-italy-born-android-rat-reported-in-china-find-bitdefender-researchers)
+- [AndroRat](https://www.bitdefender.com/blog/hotforsecurity/possibly-italy-born-android-rat-reported-in-china-find-bitdefender-researchers)
 ```shell
 $ python.exe .\amtracker\amtracker.py -f 26ffbf3d4820572e10c8f0d7c4549f622152e16f1818a1a0417724b1fb8b94d2
 
