@@ -11,7 +11,27 @@ As the malware authors will probably edit their codes to prevent this tool from 
 
 Currently, i've added config extractors for the following:
 - AndroRat
-- AhMyth
+- [AhMyth](https://www.welivesecurity.com/2019/08/22/first-spyware-android-ahmyth-google-play/)
+```shell
+$ python.exe .\amtracker\amtracker.py -f d4e16801c46f51f704ed439fe7648e9d93a2b8f571d7120657f64190f6028b23
+
+
+ ______     __  __     __     ______   ______        ______     ______     ______     __  __     ______     __   __
+/\  ___\   /\ \_\ \   /\ \   /\__  _\ /\  ___\      /\  == \   /\  == \   /\  __ \   /\ \/ /    /\  ___\   /\ "-.\ \
+\ \___  \  \ \  __ \  \ \ \  \/_/\ \/ \ \___  \     \ \  __<   \ \  __<   \ \ \/\ \  \ \  _"-.  \ \  __\   \ \ \-.  \
+ \/\_____\  \ \_\ \_\  \ \_\    \ \_\  \/\_____\     \ \_____\  \ \_\ \_\  \ \_____\  \ \_\ \_\  \ \_____\  \ \_\\"\_\
+  \/_____/   \/_/\/_/   \/_/     \/_/   \/_____/      \/_____/   \/_/ /_/   \/_____/   \/_/\/_/   \/_____/   \/_/ \/_/
+
+
+ Extract intel from this Android mallie!
+ Jacob Soo
+ Copyright (c) 2018-2022
+
+[+] Verifying if it's AhMyth.
+[+] Extracting from d4e16801c46f51f704ed439fe7648e9d93a2b8f571d7120657f64190f6028b23
+[+] C&C: [ http://217.11.29.164:44303 ]
+```
+
 - APT-C-23
 - APT-C-27
 - BankBot
