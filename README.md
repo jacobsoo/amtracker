@@ -91,6 +91,33 @@ $ python.exe .\amtracker\amtracker.py -f ca87cc9898af3883eca81aca658109fdd7ca252
 - Triout
 - Vamp
 - WhiteBroad
+- [Xenomorph](https://www.threatfabric.com/blogs/bugdrop-new-dropper-bypassing-google-security-measures.html)
+```shell
+$ python.exe .\amtracker\amtracker.py -f 65c655663b9bd756864591a605ab935e52e5295735cb8d31d16e1a6bc2c19c28.apk
+
+
+ ______     __  __     __     ______   ______        ______     ______     ______     __  __     ______     __   __
+/\  ___\   /\ \_\ \   /\ \   /\__  _\ /\  ___\      /\  == \   /\  == \   /\  __ \   /\ \/ /    /\  ___\   /\ "-.\ \
+\ \___  \  \ \  __ \  \ \ \  \/_/\ \/ \ \___  \     \ \  __<   \ \  __<   \ \ \/\ \  \ \  _"-.  \ \  __\   \ \ \-.  \
+ \/\_____\  \ \_\ \_\  \ \_\    \ \_\  \/\_____\     \ \_____\  \ \_\ \_\  \ \_____\  \ \_\ \_\  \ \_____\  \ \_\\"\_\
+  \/_____/   \/_/\/_/   \/_/     \/_/   \/_____/      \/_____/   \/_/ /_/   \/_____/   \/_/\/_/   \/_____/   \/_/ \/_/
+
+
+ Extract intel from this Android mallie!
+ Jacob Soo
+ Copyright (c) 2018-2022
+
+[+] Verifying if it's Xenomorph.
+Requested API level 31 is larger than maximum we have, returning API level 28 instead.
+Requested API level 31 is larger than maximum we have, returning API level 28 instead.
+[+] It's Xenomorph
+[+] Extracting from 65c655663b9bd756864591a605ab935e52e5295735cb8d31d16e1a6bc2c19c28.apk
+[+] C&C : [ datasciensonline.us ]
+[+] C&C : [ gogoanalytics.click ]
+[+] C&C : [ gogoanalytics.digital ]
+[+] C&C : [ sallaka.com ]
+[+] C&C : [ mybizzl.com ]
+```
 
 ### Usage
 ```python
