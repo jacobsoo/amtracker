@@ -11,6 +11,11 @@ from typing import List
 from sys import argv
 from androguard.core.bytecodes import apk
 from androguard.core.bytecodes import dvm
+from androguard.core.bytecodes.apk import APK
+from androguard.core.bytecodes.dvm import DalvikVMFormat
+from androguard.core.analysis.analysis import Analysis
+from androguard.decompiler.decompiler import DecompilerJADX
+from amtracker.core.BladeHawk import BladeHawk
 from amtracker.core.AhMyth import AhMyth
 from amtracker.core.AndroRat import AndroRat
 from amtracker.core.APT_C_23 import APT_C_23
@@ -31,8 +36,11 @@ from amtracker.core.Triout import Triout
 from amtracker.core.Vamp import Vamp
 from amtracker.core.MuddyWater import MuddyWater
 from amtracker.core.WhiteBroad import WhiteBroad
+from amtracker.core.Xenomorph import Xenomorph
 
-android_family = ["AndroRat", "AhMyth", "apt-c-23", "apt-c-27", "BankBot", "ChinaSMSStealer", "Dendroid", "EventBot", "FakeSpy", "FlexBotnet", "moqhao", "MuddyWater", "Saefko", "SandroRat", "spynote", "SyrianMT", "TeleRat", "Triout", "Vamp", "WhiteBroad"]
+
+
+android_family = ["BladeHawk", "AndroRat", "AhMyth", "apt-c-23", "apt-c-27", "BankBot", "ChinaSMSStealer", "Dendroid", "EventBot", "FakeSpy", "FlexBotnet", "moqhao", "MuddyWater", "Saefko", "SandroRat", "spynote", "SyrianMT", "TeleRat", "Triout", "Vamp", "WhiteBroad", "Xenomorph"]
 
 #---------------------------------------------------
 # isNotEmpty : Checks whether string is empty
@@ -68,49 +76,55 @@ def check_apk_file(apk_file):
 def verifyMalware(apkfile):
     bRes = False
     for family in android_family:
-        if family=="AndroRat":
+        if family=="BladeHawk":
+            analysis = BladeHawk()
+            _log("[+] Verifying if it's BladeHawk.")
+            bRes = analysis.verifyBladeHawk(apkfile)
+            if bRes==True:
+                break
+        elif family=="AndroRat":
             analysis = AndroRat()
             _log("[+] Verifying if it's AndroRat.")
             bRes = analysis.verifyAndroRat(apkfile)
             if bRes==True:
                 break
-        if family=="AhMyth":
+        elif family=="AhMyth":
             analysis = AhMyth()
             _log("[+] Verifying if it's AhMyth.")
             bRes = analysis.verifyAhMyth(apkfile)
             if bRes==True:
                 break
-        if family=="apt-c-23":
+        elif family=="apt-c-23":
             analysis = APT_C_23()
             _log("[+] Verifying if it's APT-C-23.")
             bRes = analysis.verifyAPT_C_23(apkfile)
             if bRes==True:
                 break
-        if family=="apt-c-27":
+        elif family=="apt-c-27":
             analysis = APT_C_27()
             _log("[+] Verifying if it's APT-C-27.")
             bRes = analysis.verifyAPT_C_27(apkfile)
             if bRes==True:
                 break
-        if family=="BankBot":
+        elif family=="BankBot":
             analysis = BankBot()
             _log("[+] Verifying if it's BankBot.")
             bRes = analysis.verifyBankBot(apkfile)
             if bRes==True:
                 break
-        if family=="ChinaSMSStealer":
+        elif family=="ChinaSMSStealer":
             analysis = ChinaSMSStealer()
             _log("[+] Verifying if it's ChinaSMSStealer.")
             bRes = analysis.verifyChinaSMSStealer(apkfile)
             if bRes==True:
                 break
-        if family=="Dendroid":
+        elif family=="Dendroid":
             analysis = Dendroid()
             _log("[+] Verifying if it's Dendroid.")
             bRes = analysis.verifyDendroid(apkfile)
             if bRes==True:
                 break
-        if family=="EventBot":
+        elif family=="EventBot":
             analysis = EventBot()
             _log("[+] Verifying if it's EventBot.")
             bRes = analysis.verifyEventBot(apkfile)
@@ -188,6 +202,13 @@ def verifyMalware(apkfile):
             bRes = analysis.verifyWhiteBroad(apkfile)
             if bRes==True:
                 break
+        elif family=="Xenomorph":
+            analysis = Xenomorph()
+            _log("[+] Verifying if it's Xenomorph.")
+            bRes = analysis.verifyXenomorph(apkfile)
+            if bRes==True:
+                break
+        
 
 #-------------------------------------------------------------
 # logo : Ascii Logos like the 90s. :P
@@ -202,7 +223,7 @@ def logo():
     print('\n')
     print(" Extract intel from this Android mallie!")
     print(" Jacob Soo")
-    print(" Copyright (c) 2018-2020\n")
+    print(" Copyright (c) 2018-2022\n")
                                                                                                                       
 
 if __name__ == "__main__":
