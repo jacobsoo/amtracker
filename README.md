@@ -101,6 +101,30 @@ $ python.exe .\amtracker\amtracker.py -f 2a4cf22220b95ad1f802efd1ae8abea56e83dc5
 [+] Port : [ 4000 ]
 ```
 
+- [CapraRAT](https://www.trendmicro.com/en_us/research/22/a/investigating-apt36-or-earth-karkaddans-attack-chain-and-malware.html)
+```shell
+$ python.exe .\amtracker\amtracker.py -f "C:\Users\admin\Desktop\Android malware\CapraRAT\d62705186c488bb26fccdb1404931223a887004fd6704ac1483e599a15e92792"
+
+
+ ______     __  __     __     ______   ______        ______     ______     ______     __  __     ______     __   __
+/\  ___\   /\ \_\ \   /\ \   /\__  _\ /\  ___\      /\  == \   /\  == \   /\  __ \   /\ \/ /    /\  ___\   /\ "-.\ \
+\ \___  \  \ \  __ \  \ \ \  \/_/\ \/ \ \___  \     \ \  __<   \ \  __<   \ \ \/\ \  \ \  _"-.  \ \  __\   \ \ \-.  \
+ \/\_____\  \ \_\ \_\  \ \_\    \ \_\  \/\_____\     \ \_____\  \ \_\ \_\  \ \_____\  \ \_\ \_\  \ \_____\  \ \_\\"\_\
+  \/_____/   \/_/\/_/   \/_/     \/_/   \/_____/      \/_____/   \/_/ /_/   \/_____/   \/_/\/_/   \/_____/   \/_/ \/_/
+
+
+ Extract intel from this Android mallie!
+ Jacob Soo
+ Copyright (c) 2018-2022
+
+[+] Verifying if it's CapraRAT.
+[+] It's CapraRAT
+[+] Extracting from C:\Users\admin\Desktop\Android malware\CapraRAT\d62705186c488bb26fccdb1404931223a887004fd6704ac1483e599a15e92792
+[+] C2 : [ 80.241.209.53 ]
+[+] C2 : [ shareboxs.net ]
+[+] Ports : [ 12182 ]
+```
+
 - ChinaSMSStealer
 - Dendroid
 - FakeSpy
