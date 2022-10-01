@@ -21,6 +21,7 @@ from amtracker.core.AndroRat import AndroRat
 from amtracker.core.APT_C_23 import APT_C_23
 from amtracker.core.APT_C_27 import APT_C_27
 from amtracker.core.BankBot import BankBot
+from amtracker.core.CapraRAT import CapraRAT
 from amtracker.core.ChinaSMSStealer import ChinaSMSStealer
 from amtracker.core.Dendroid import Dendroid
 from amtracker.core.EventBot import EventBot
@@ -40,7 +41,7 @@ from amtracker.core.Xenomorph import Xenomorph
 
 
 
-android_family = ["BladeHawk", "AndroRat", "AhMyth", "apt-c-23", "apt-c-27", "BankBot", "ChinaSMSStealer", "Dendroid", "EventBot", "FakeSpy", "FlexBotnet", "moqhao", "MuddyWater", "Saefko", "SandroRat", "spynote", "SyrianMT", "TeleRat", "Triout", "Vamp", "WhiteBroad", "Xenomorph"]
+android_family = ["BladeHawk", "AndroRat", "AhMyth", "apt-c-23", "apt-c-27", "BankBot", "CapraRAT", "ChinaSMSStealer", "Dendroid", "EventBot", "FakeSpy", "FlexBotnet", "moqhao", "MuddyWater", "Saefko", "SandroRat", "spynote", "SyrianMT", "TeleRat", "Triout", "Vamp", "WhiteBroad", "Xenomorph"]
 
 #---------------------------------------------------
 # isNotEmpty : Checks whether string is empty
@@ -110,6 +111,12 @@ def verifyMalware(apkfile):
             analysis = BankBot()
             _log("[+] Verifying if it's BankBot.")
             bRes = analysis.verifyBankBot(apkfile)
+            if bRes==True:
+                break
+        elif family=="CapraRAT":
+            analysis = CapraRAT()
+            _log("[+] Verifying if it's CapraRAT.")
+            bRes = analysis.verifyCapraRAT(apkfile)
             if bRes==True:
                 break
         elif family=="ChinaSMSStealer":
