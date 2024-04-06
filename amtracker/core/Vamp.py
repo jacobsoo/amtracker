@@ -116,4 +116,4 @@ class Vamp(object):
                             _log('Extracting from %s' % apkfile)
                             for i in range(len(c2)):
                                 _log('C&C: [ %s ]' % c2[i])
-                                return True
+                            return True
