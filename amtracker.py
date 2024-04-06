@@ -15,19 +15,22 @@ from androguard.core.bytecodes.apk import APK
 from androguard.core.bytecodes.dvm import DalvikVMFormat
 from androguard.core.analysis.analysis import Analysis
 from androguard.decompiler.decompiler import DecompilerJADX
-from amtracker.core.BladeHawk import BladeHawk
 from amtracker.core.AhMyth import AhMyth
 from amtracker.core.AndroRat import AndroRat
 from amtracker.core.APT_C_23 import APT_C_23
 from amtracker.core.APT_C_27 import APT_C_27
 from amtracker.core.BankBot import BankBot
+from amtracker.core.BladeHawk import BladeHawk
 from amtracker.core.CapraRAT import CapraRAT
 from amtracker.core.ChinaSMSStealer import ChinaSMSStealer
 from amtracker.core.Dendroid import Dendroid
 from amtracker.core.EventBot import EventBot
 from amtracker.core.FakeSpy import FakeSpy
 from amtracker.core.FlexBotnet import FlexBotnet
+from amtracker.core.MMRat import MMRat
 from amtracker.core.moqhao import moqhao
+from amtracker.core.MuddyWater import MuddyWater
+from amtracker.core.Piom import Piom
 from amtracker.core.Saefko import Saefko
 from amtracker.core.SandroRat import SandroRat
 from amtracker.core.spynote import spynote
@@ -35,13 +38,12 @@ from amtracker.core.SyrianMT import SyrianMT
 from amtracker.core.TeleRat import TeleRat
 from amtracker.core.Triout import Triout
 from amtracker.core.Vamp import Vamp
-from amtracker.core.MuddyWater import MuddyWater
 from amtracker.core.WhiteBroad import WhiteBroad
 from amtracker.core.Xenomorph import Xenomorph
 
 
 
-android_family = ["BladeHawk", "AndroRat", "AhMyth", "apt-c-23", "apt-c-27", "BankBot", "CapraRAT", "ChinaSMSStealer", "Dendroid", "EventBot", "FakeSpy", "FlexBotnet", "moqhao", "MuddyWater", "Saefko", "SandroRat", "spynote", "SyrianMT", "TeleRat", "Triout", "Vamp", "WhiteBroad", "Xenomorph"]
+android_family = ["BladeHawk", "AndroRat", "AhMyth", "apt-c-23", "apt-c-27", "BankBot", "CapraRAT", "ChinaSMSStealer", "Dendroid", "EventBot", "FakeSpy", "FlexBotnet", "MMRat", "moqhao", "MuddyWater", "Piom", "Saefko", "SandroRat", "spynote", "SyrianMT", "TeleRat", "Triout", "Vamp", "WhiteBroad", "Xenomorph"]
 
 #---------------------------------------------------
 # isNotEmpty : Checks whether string is empty
@@ -149,6 +151,12 @@ def verifyMalware(apkfile):
             bRes = analysis.verifyFlexBotnet(apkfile)
             if bRes==True:
                 break
+        elif family=="MMRat":
+            analysis = MMRat()
+            _log("[+] Verifying if it's MMRat.")
+            bRes = analysis.verifyMMRat(apkfile)
+            if bRes==True:
+                break
         elif family=="moqhao":
             analysis = moqhao()
             _log("[+] Verifying if it's Moqhao.")
@@ -159,6 +167,12 @@ def verifyMalware(apkfile):
             analysis = MuddyWater()
             _log("[+] Verifying if it's MuddyWater.")
             bRes = analysis.verifyMuddyWater(apkfile)
+            if bRes==True:
+                break
+        elif family=="Piom":
+            analysis = Piom()
+            _log("[+] Verifying if it's Piom.")
+            bRes = analysis.verifyPiom(apkfile)
             if bRes==True:
                 break
         elif family=="Saefko":
@@ -216,7 +230,6 @@ def verifyMalware(apkfile):
             if bRes==True:
                 break
         
-
 #-------------------------------------------------------------
 # logo : Ascii Logos like the 90s. :P
 #-------------------------------------------------------------
