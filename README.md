@@ -131,6 +131,7 @@ $ python.exe .\amtracker\amtracker.py -f "C:\Users\admin\Desktop\Android malware
 - Dendroid
 - FakeSpy
 - FlexBotnet
+- [MMRat](https://www.trendmicro.com/en_us/research/23/h/mmrat-carries-out-bank-fraud-via-fake-app-stores.html)
 - Moqhao
 - MuddyWater
 - Saefko
