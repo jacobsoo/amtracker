@@ -52,7 +52,7 @@ $ python.exe .\amtracker\amtracker.py -f 26ffbf3d4820572e10c8f0d7c4549f622152e16
 [+] C&C: [ mehyaz.ddns.net:81 ]
 ```
 
-- [APT41]([https://www.welivesecurity.com/2019/08/22/first-spyware-android-ahmyth-google-play/](https://www.lookout.com/threat-intelligence/article/wyrmspy-dragonegg-surveillanceware-apt41))
+- [APT41](https://www.lookout.com/threat-intelligence/article/wyrmspy-dragonegg-surveillanceware-apt41)
 
 - [APT-C-23](https://symantec-enterprise-blogs.security.com/blogs/expert-perspectives/ongoing-android-malware-campaign-targets-palestinians-part-2)
 ```shell
