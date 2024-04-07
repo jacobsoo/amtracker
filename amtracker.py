@@ -13,12 +13,13 @@ from androguard.core.bytecodes import apk
 from androguard.core.bytecodes import dvm
 from androguard.core.bytecodes.apk import APK
 from androguard.core.bytecodes.dvm import DalvikVMFormat
-from androguard.core.analysis.analysis import Analysis
+from androguard.core.analysis import analysis
 from androguard.decompiler.decompiler import DecompilerJADX
 from amtracker.core.AhMyth import AhMyth
 from amtracker.core.AndroRat import AndroRat
 from amtracker.core.APT_C_23 import APT_C_23
 from amtracker.core.APT_C_27 import APT_C_27
+from amtracker.core.APT41 import APT41
 from amtracker.core.BankBot import BankBot
 from amtracker.core.BladeHawk import BladeHawk
 from amtracker.core.CapraRAT import CapraRAT
@@ -43,7 +44,7 @@ from amtracker.core.Xenomorph import Xenomorph
 
 
 
-android_family = ["BladeHawk", "AndroRat", "AhMyth", "apt-c-23", "apt-c-27", "BankBot", "CapraRAT", "ChinaSMSStealer", "Dendroid", "EventBot", "FakeSpy", "FlexBotnet", "MMRat", "moqhao", "MuddyWater", "Piom", "Saefko", "SandroRat", "spynote", "SyrianMT", "TeleRat", "Triout", "Vamp", "WhiteBroad", "Xenomorph"]
+android_family = ["BladeHawk", "AndroRat", "AhMyth", "apt-c-23", "apt-c-27", "APT41", "BankBot", "CapraRAT", "ChinaSMSStealer", "Dendroid", "EventBot", "FakeSpy", "FlexBotnet", "MMRat", "moqhao", "MuddyWater", "Piom", "Saefko", "SandroRat", "spynote", "SyrianMT", "TeleRat", "Triout", "Vamp", "WhiteBroad", "Xenomorph"]
 
 #---------------------------------------------------
 # isNotEmpty : Checks whether string is empty
@@ -83,6 +84,12 @@ def verifyMalware(apkfile):
             analysis = BladeHawk()
             _log("[+] Verifying if it's BladeHawk.")
             bRes = analysis.verifyBladeHawk(apkfile)
+            if bRes==True:
+                break
+        elif family=="APT41":
+            analysis = APT41()
+            _log("[+] Verifying if it's APT41.")
+            bRes = analysis.verifyAPT41(apkfile)
             if bRes==True:
                 break
         elif family=="AndroRat":
